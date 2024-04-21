@@ -32,6 +32,20 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Animasi untuk judul header */
+header h1 {
+    position: relative;
+    top: 50px; /* Mulai dari posisi 50px di bawah */
+    opacity: 0; /* Mulai dengan opacity 0 (tidak terlihat) */
+    transition: top 1s, opacity 1s; /* Efek transisi untuk top dan opacity selama 1 detik */
+}
+
+/* Atur ulang posisi dan opacity judul header saat hover */
+header:hover h1 {
+    top: 0; /* Kembalikan ke posisi asli */
+    opacity: 1; /* Tampilkan judul dengan opacity 1 */
+}
+
 /* Main Content */
 main {
     padding: 20px;
@@ -60,3 +74,7 @@ footer {
     text-align: center;
 }
 
+/* Efek hover pada menu navigasi */
+nav ul li a:hover {
+    color: #ff6347; /* Ganti warna pada hover */
+}
