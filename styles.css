@@ -37,12 +37,13 @@ header h1 {
     position: relative;
     top: 50px; /* Mulai dari posisi 50px di bawah */
     opacity: 0; /* Mulai dengan opacity 0 (tidak terlihat) */
-    transition: top 1s, opacity 1s; /* Efek transisi untuk top dan opacity selama 1 detik */
+    transform: translateY(-50px); /* Geser ke atas sebesar 50px */
+    transition: transform 1s ease, opacity 1s ease; /* Efek transisi untuk transformasi dan opacity selama 1 detik dengan efek easing */
 }
 
 /* Atur ulang posisi dan opacity judul header saat hover */
 header:hover h1 {
-    top: 0; /* Kembalikan ke posisi asli */
+    transform: translateY(0); /* Kembalikan ke posisi asli */
     opacity: 1; /* Tampilkan judul dengan opacity 1 */
 }
 
@@ -77,4 +78,5 @@ footer {
 /* Efek hover pada menu navigasi */
 nav ul li a:hover {
     color: #ff6347; /* Ganti warna pada hover */
+    transition: color 0.3s ease; /* Efek transisi warna selama 0.3 detik dengan efek easing */
 }
