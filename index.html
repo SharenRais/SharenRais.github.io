@@ -2,29 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href='https://sharenrais.github.io' rel='stylesheet'>
-    
 </head>
 <body>
-
-<header class="header">
-    <a href="#home" class="sharen1.jpg">Sharen
-        <span>Rais</span>span></a>
-
-    <i class='bx bx-menu' id="menu"></i>i>
-    
     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-</header>
-
+    <div class="container">
+        <h1>Selamat Datang di Halaman Web Sederhana</h1>
+        <button id="helloButton">Klik Saya</button>
+        <p id="message"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
